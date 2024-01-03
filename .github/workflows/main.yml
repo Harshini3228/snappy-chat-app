@@ -34,7 +34,6 @@ jobs:
       - uses: azure/container-apps-deploy-action@v1
         with:
           azureContainerRegistry: harshiniprojects
-          image: |
-            harshiniprojects.azurecr.io/snappy-chat-app-frontend-2.0:latest
+          imageToDeploy: harshiniprojects.azurecr.io/snappy-chat-app-frontend-2.0:latest
           containerAppName: snappy-container
           resourceGroup: Harshini-Training
