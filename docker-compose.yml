@@ -2,6 +2,7 @@ version: '3'
 
 services:
   backend:
+    image: harshiniprojects.azurecr.io/snappy-chat-app-backend-2.0:latest
     build:
       context: ./server
       dockerfile: Dockerfile.backend
@@ -11,6 +12,7 @@ services:
       - ./server:/app/server
 
   frontend:
+    image: harshiniprojects.azurecr.io/snappy-chat-app-frontend-2.0:latest
     build:
       context: ./public
       dockerfile: Dockerfile.frontend
