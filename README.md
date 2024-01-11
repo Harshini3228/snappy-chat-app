@@ -1,6 +1,6 @@
 ## Real Time Chat Application
 
-This is a real time chat app built with react, nodejs and socket.io. This project features a login,register and chat page where you can chat with your contacts. Your contact will be able to see the message that you send in real time without page refresh. It also has a CI/CD pipeline that deploys to azure container app.
+This is a real time chat app built with react, nodejs and socket.io. This project features a login,register and chat page where you can chat with your contacts. Your contact will be able to see the message that you send in real time without page refresh. It is containerized and also has a CI/CD pipeline that deploys to azure container app.
 
 Steps to run the app:
 
@@ -18,6 +18,12 @@ To run frontend and backend simultaneously :
 ```
 npm i -g concurrently 
 concurrently "cd server && npm start" "cd public && npm start"
+```
+
+To run it as containers:
+
+```
+docker-compose up 
 ```
 
 Login/Register and start chatting!
